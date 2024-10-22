@@ -16,22 +16,22 @@
     "passport-google-oauth20": "^2.0.0",
     "uuid": "^10.0.0"
   },
-  "devDependencies": {
-    "@babel/cli": "^7.20.0",
-    "@babel/core": "^7.20.0",
-    "@babel/preset-env": "^7.20.0"
-  },
   "name": "server",
   "type": "module",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "build": "babel src -d dist",
+    "build": "babel . -d dist",
     "start": "node dist/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.25.7",
+    "@babel/core": "^7.25.8",
+    "@babel/preset-env": "^7.25.8"
+  }
 }
